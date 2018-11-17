@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "saP@ssw0rd",
+    "database": "koaappdb",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "saP@ssw0rd",
+    "database": "koaappdb",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "saP@ssw0rd",
+    "database": "koaappdb",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "koasql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.6.2",
+    "koa-parser": "^1.0.5",
+    "koa-router": "^7.4.0",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.2"
+  }
+}

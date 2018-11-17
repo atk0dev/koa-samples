@@ -1,0 +1,39 @@
+
+
+POST http://localhost:4000/companies HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test company 1",
+    "city": "test city",
+    "address": "test address"
+}
+
+
+POST http://localhost:4000/companies HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test company 2",
+    "city": "test city",
+    "address": "test address"
+}
+
+
+GET http://localhost:4000/companies HTTP/1.1
+
+
+GET http://localhost:4000/companies/2 HTTP/1.1
+
+
+DELETE http://localhost:4000/companies/2 HTTP/1.1
+ 
+
+PUT http://localhost:4000/companies/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "test company update",
+    "city": "test city",
+    "address": "test address"
+}
