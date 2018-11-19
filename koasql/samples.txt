@@ -1,4 +1,4 @@
-
+HTTP Request to test API
 
 POST http://localhost:4000/companies HTTP/1.1
 content-type: application/json
