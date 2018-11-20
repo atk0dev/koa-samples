@@ -6,6 +6,7 @@ module.exports = {
                 name: ctx.request.body.name,
                 city: ctx.request.body.city,
                 address: ctx.request.body.address,
+                UserId: ctx.state.user
             }); 
         }
         catch(err) {
@@ -16,6 +17,7 @@ module.exports = {
     async find(ctx) {
         try {
             ctx.body = await ctx.db.Company.findAll({
+                UserId: ctx.state.user,
                 include: [{
                     model: ctx.db.Job
                 }]

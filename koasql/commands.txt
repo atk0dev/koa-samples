@@ -4,3 +4,8 @@ sequelize model:generate --name Candidate --attributes firstName:string,lastName
 
 sequelize model:generate --name Application --attributes statusId:integer 
 
+sequelize model:generate --name User --attributes email:string,password:string 
+
+sequelize migration:generate --name city
+
+sequelize db:migrate
