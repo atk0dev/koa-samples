@@ -1,0 +1,6 @@
+sequelize model:generate --name Job --attributes title:string,description:string 
+
+sequelize model:generate --name Candidate --attributes firstName:string,lastName:string,email:string 
+
+sequelize model:generate --name Application --attributes statusId:integer 
+

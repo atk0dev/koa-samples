@@ -37,3 +37,25 @@ content-type: application/json
     "city": "test city",
     "address": "test address"
 }
+
+
+POST http://localhost:4000/jobs HTTP/1.1
+content-type: application/json
+
+{
+    "title": "test job 3",
+    "companyId": 1
+}
+
+
+POST http://localhost:4000/applications HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Andrii",
+    "lastName": "Tkach",
+    "jobId": 1,
+    "email": "email@domain.com"
+}
+
+GET http://localhost:4000/jobs HTTP/1.1
