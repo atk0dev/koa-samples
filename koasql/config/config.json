@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "saP@ssw0rd",
+    "password": "root",
     "database": "koaappdb",
     "host": "localhost",
     "dialect": "mysql",

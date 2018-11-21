@@ -1,0 +1,8 @@
+{
+    "name": "Demo KOA app with SQL",
+    "version": "1.0.0",
+    "description": "REST API project",
+    "template": {
+        "forceLanguage": "en"
+    }
+}

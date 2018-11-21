@@ -1,6 +1,7 @@
 const Koa = require('koa');
 const Router = require('koa-router');
 const bodyParser = require('koa-parser');
+const serve = require('koa-static');
 
 const router = require('./routes');
 
@@ -9,7 +10,7 @@ const port = 4000;
 
 const db = require('./models');
 db.sequelize.sync({
-//    force: true
+    force: true
     })
     .then(() => {
         console.log('models synced');
@@ -21,6 +22,7 @@ db.sequelize.sync({
 app.context.db = db;
 
 app.use(bodyParser());
+app.use(serve(__dirname + '/public'));
 app.use(router.routes());
 
 app.listen(port);

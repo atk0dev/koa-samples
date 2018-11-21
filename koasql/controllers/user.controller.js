@@ -2,6 +2,29 @@ const Utils = require('../services/utility.service');
 const JwtService = require('../services/jwt.service');    
 
 module.exports = {
+
+    /**
+     * 
+     * @api {post} /signup
+     * @apiGroup Users
+     * @apiName signupUser
+     * @apiParam {String} [email] User must provide email
+     * @apiParam {String} [password] User must provide password
+     * @apiParamExample {String} Request Params:
+     * {
+     *  "email": "test@email.com",
+     *  "password": "password123"
+     * }
+     * @apiSuccess {String} Msg Signup successfull
+     * @apiSuccessExample {json} Success-Response:
+     * HTTP/1.1 200OK
+     * {
+     *  "msg": "Signup successfull"
+     * } 
+     * @apiExample {curl} Example usage:
+     * curl -i http://localhost:4000/signup
+     * @apiDescription User can create new account
+     */
     async signup(ctx) {
 
         try {
@@ -26,6 +49,28 @@ module.exports = {
         }        
     },
 
+    /**
+     * 
+     * @api {post} /login
+     * @apiGroup Users
+     * @apiName loginUser
+     * @apiParam {String} [email] User must provide email
+     * @apiParam {String} [password] User must provide valid password
+     * @apiParamExample {String} Request Params:
+     * {
+     *  "email": "test@email.com",
+     *  "password": "password123"
+     * }
+     * @apiSuccess {Object} Token JWT to access protecred routes
+     * @apiSuccessExample {json} Success-Response:
+     * HTTP/1.1 200OK
+     * {
+     *  "token": "Token"
+     * } 
+     * @apiExample {curl} Example usage:
+     * curl -i http://localhost:4000/login
+     * @apiDescription Authenticate User with email and password
+     */
     async login(ctx) {
         try {
 
